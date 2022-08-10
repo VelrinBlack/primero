@@ -3,6 +3,7 @@ const theme = {
     white: '#ffffff',
     black: '#000000',
     grey: '#F0F0F0',
+    darkGrey: '#656565',
   },
   fontWeights: {
     regular: '400',
@@ -10,6 +11,7 @@ const theme = {
     black: '900',
   },
   fontSizes: {
+    XS: '14px',
     S: '16px',
     M: '20px',
     L: '36px',
