@@ -23,7 +23,13 @@ const Contact = () => (
           />
         </div>
       </div>
-      <div></div>
+      <div>
+        <iframe
+          loading='lazy'
+          allowFullScreen
+          src={`https://www.google.com/maps/embed/v1/place?key=${process.env.MAPS_API_KEY}&q=Wypożyczalnia+busów+osobowych+grabowa+11+chrzanów`}
+        ></iframe>
+      </div>
     </div>
   </StyledWrapper>
 );

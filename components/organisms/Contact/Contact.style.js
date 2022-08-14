@@ -111,6 +111,27 @@ const StyledWrapper = styled.div`
       }
 
       &:nth-child(2) {
+        @media (max-width: 1600px) {
+          height: auto;
+          aspect-ratio: 3 / 2;
+          margin-top: 100px;
+        }
+
+        @media (max-width: 1024px) {
+          margin-top: 80px;
+        }
+
+        @media (max-width: 500px) {
+          margin-top: 50px;
+          aspect-ratio: 1 / 1;
+        }
+
+        iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+          border-radius: ${({ theme }) => theme.borderRadiuses.big};
+        }
       }
     }
   }
