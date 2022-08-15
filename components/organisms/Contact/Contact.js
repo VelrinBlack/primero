@@ -4,23 +4,15 @@ import ContactCard from 'components/molecules/ContactCard/ContactCard';
 import KatarzynaImage from 'images/katarzyna.jpg';
 import MateuszImage from 'images/mateusz.jpg';
 
-const Contact = () => (
-  <StyledWrapper>
+const Contact = ({ contactRef }) => (
+  <StyledWrapper ref={contactRef}>
     <h2 className='title'>Kontakt</h2>
     <div className='flex-container'>
       <div>
         <Form />
         <div className='contact-cards'>
-          <ContactCard
-            image={KatarzynaImage}
-            name='Katarzyna'
-            phone='+48 512 316 622'
-          />
-          <ContactCard
-            image={MateuszImage}
-            name='Mateusz'
-            phone='+48 883 163 050'
-          />
+          <ContactCard image={KatarzynaImage} name='Katarzyna' phone='+48 512 316 622' />
+          <ContactCard image={MateuszImage} name='Mateusz' phone='+48 883 163 050' />
         </div>
       </div>
       <div>

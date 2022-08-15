@@ -2,8 +2,8 @@ import StyledWrapper from './Offer.style';
 import Card from 'components/molecules/Card/Card';
 import Card1Image from 'images/card1.webp';
 
-const Offer = () => (
-  <StyledWrapper>
+const Offer = ({ offerRef }) => (
+  <StyledWrapper ref={offerRef}>
     <h2 className='title'>Nasza oferta</h2>
     <div className='cards-container'>
       <Card

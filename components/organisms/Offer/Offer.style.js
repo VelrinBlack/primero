@@ -7,8 +7,11 @@ const StyledWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
+  scroll-margin: 180px;
+
   @media (max-width: 2560px) {
     margin-top: 300px;
+    scroll-margin: 150px;
   }
 
   @media (max-width: 1024px) {
