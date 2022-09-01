@@ -1,5 +1,7 @@
 import StyledWrapper from './Header.style';
 import { useState } from 'react';
+import Image from 'next/image';
+import Logo from 'images/logo.svg';
 
 const Header = ({ aboutRef, offerRef, contactRef }) => {
   const scrollToRef = (ref) => {
@@ -15,7 +17,9 @@ const Header = ({ aboutRef, offerRef, contactRef }) => {
 
   return (
     <StyledWrapper hamburgerActive={hamburgerActive}>
-      <div className='logo'></div>
+      <div className='logo'>
+        <Image src={Logo} alt='logo' layout='fill' />
+      </div>
       <nav className='navigation'>
         <li onClick={() => scrollToRef(aboutRef)}>O nas</li>
         <li onClick={() => scrollToRef(offerRef)}>Oferta</li>

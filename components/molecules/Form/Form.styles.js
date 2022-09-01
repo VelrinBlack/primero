@@ -6,11 +6,11 @@ const StyledWrapper = styled.form`
 
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 10px;
 
   @media (max-width: 2560px) {
     width: 375px !important;
-    row-gap: 15px;
+    row-gap: 7px;
   }
 
   @media (max-width: 1600px) {
@@ -56,6 +56,17 @@ const StyledWrapper = styled.form`
       height: 300px;
       padding: 15px;
       font-size: ${({ theme }) => theme.fontSizes.S};
+    }
+  }
+
+  .error {
+    margin: 0 0 10px 20px;
+    font-size: ${({ theme }) => theme.fontSizes.S};
+    color: red;
+
+    @media (max-width: 2560px) {
+      margin: 0 0 5px 15px;
+      font-size: ${({ theme }) => theme.fontSizes.XS};
     }
   }
 

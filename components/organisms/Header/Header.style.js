@@ -26,9 +26,13 @@ const StyledWrapper = styled.header`
   }
 
   .logo {
+    position: relative;
     width: 100px;
     height: 40px;
-    background-color: red;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .navigation {
