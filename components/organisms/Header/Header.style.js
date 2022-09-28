@@ -27,8 +27,9 @@ const StyledWrapper = styled.header`
 
   .logo {
     position: relative;
-    width: 100px;
-    height: 40px;
+    width: 141px;
+    height: 50px;
+
     img {
       width: 100%;
       height: 100%;

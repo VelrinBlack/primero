@@ -1,7 +1,7 @@
 import StyledWrapper from './Header.style';
 import { useState } from 'react';
 import Image from 'next/image';
-import Logo from 'images/logo.svg';
+import Logo from 'images/logo.png';
 
 const Header = ({ aboutRef, offerRef, contactRef }) => {
   const scrollToRef = (ref) => {
