@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
-  width: 550px;
+  width: 480px;
 
   background-color: ${({ theme }) => theme.colors.white};
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 25%);
   border-radius: ${({ theme }) => theme.borderRadiuses.big};
 
   @media (max-width: 2560px) {
-    width: 400px;
+    width: 340px;
   }
 
   @media (max-width: 1600px) {

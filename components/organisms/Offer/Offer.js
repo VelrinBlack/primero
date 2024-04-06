@@ -24,6 +24,12 @@ const Offer = ({ offerRef }) => (
         title='Kamper Knaus'
         link='https://www.olx.pl/d/oferta/kamper-knaus-wynajem-od-250-zl-camper-prawo-jazdy-kat-b-CID3018-IDLjb7M.html?reason=seller_listing%7Cnormal'
       />
+      <Card
+        img={Card1Image}
+        price='230 - 260 zł'
+        title='Kamper Knaus'
+        link='https://www.olx.pl/d/oferta/kamper-knaus-wynajem-od-250-zl-camper-prawo-jazdy-kat-b-CID3018-IDLjb7M.html?reason=seller_listing%7Cnormal'
+      />
     </div>
   </StyledWrapper>
 );
