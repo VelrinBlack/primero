@@ -117,7 +117,7 @@ const StyledWrapper = styled.header`
   .mobile-navigation {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
 
     width: 100%;
     height: 100%;
@@ -127,8 +127,7 @@ const StyledWrapper = styled.header`
     justify-content: center;
     align-items: center;
 
-    transform: ${({ hamburgerActive }) =>
-      hamburgerActive ? 'translateX(0)' : 'translateX(-100%)'};
+    transform: ${({ hamburgerActive }) => (hamburgerActive ? 'translateX(100%)' : 'translateX(0)')};
 
     background-color: ${({ theme }) => theme.colors.white};
 
